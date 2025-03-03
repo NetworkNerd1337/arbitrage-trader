@@ -80,10 +80,10 @@ Usage:
 =Features=
 
 - Exchange Support
-Coinbase
-Gemini
-Binance
-Easily extensible to other CCXT-supported exchanges
+  - Coinbase
+  - Gemini
+  - Binance
+  - Easily extensible to other CCXT-supported exchanges
 
 - Trading Logic
 -- Hourly trade execution
