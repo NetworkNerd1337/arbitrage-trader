@@ -55,15 +55,15 @@ The script includes a placeholder **_load_config** method. In production, you sh
 api_key = your_key
 api_secret = your_secret
 sandbox_key = your_sandbox_key
-sandbox_secret = your_sandbox_secret
+sandbox_secret = your_sandbox_secret</code>
 
-[gemini]
+<code>[gemini]
 api_key = your_key
 api_secret = your_secret
 sandbox_key = your_sandbox_key
-sandbox_secret = your_sandbox_secret
+sandbox_secret = your_sandbox_secret</code>
 
-[binance]
+<code>[binance]
 api_key = your_key
 api_secret = your_secret
 sandbox_key = your_sandbox_key
@@ -80,10 +80,10 @@ Usage:
 =Features=
 
 - Exchange Support
--- Coinbase
--- Gemini
--- Binance
--- Easily extensible to other CCXT-supported exchanges
+-   Coinbase
+- Gemini
+- Binance
+- Easily extensible to other CCXT-supported exchanges
 
 - Trading Logic
 -- Hourly trade execution
