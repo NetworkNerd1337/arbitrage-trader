@@ -72,18 +72,18 @@ sandbox_secret = your_sandbox_secret</code>
 Usage:
 
 <code>#Run with Coinbase in live mode
-./crypto_trader.py --exchange coinbase
+./crypto_trader.py --exchange coinbase</code>
 
-#Run with Gemini in test mode
+<code>#Run with Gemini in test mode
 ./crypto_trader.py --exchange gemini --test</code>
 
 =Features=
 
 - Exchange Support
--   Coinbase
-- Gemini
-- Binance
-- Easily extensible to other CCXT-supported exchanges
+Coinbase
+Gemini
+Binance
+Easily extensible to other CCXT-supported exchanges
 
 - Trading Logic
 -- Hourly trade execution
