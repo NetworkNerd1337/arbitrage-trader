@@ -86,45 +86,45 @@ Usage:
   - Easily extensible to other CCXT-supported exchanges
 
 - Trading Logic
--- Hourly trade execution
--- Arbitrage detection (>0.5% profit potential)
--- Fixed trade size (0.01 units)
--- Portfolio tracking
+  - Hourly trade execution
+  - Arbitrage detection (>0.5% profit potential)
+  - Fixed trade size (0.01 units)
+  - Portfolio tracking
 
 - Safety Features
--- Rate limiting enabled
--- Test mode support
--- Error logging
--- Graceful shutdown
+  - Rate limiting enabled
+  - Test mode support
+  - Error logging
+  - Graceful shutdown
 
 - Monitoring
--- Logs to /var/log/crypto_trader.log
--- Includes timestamps and error details
+  - Logs to /var/log/crypto_trader.log
+  - Includes timestamps and error details
 
 - Class Structure
--- CryptoTrader (Abstract Base Class)
--- Defines core trading functionality
--- Implements portfolio management
--- Handles scheduling and logging
+  - CryptoTrader (Abstract Base Class)
+  - Defines core trading functionality
+  - Implements portfolio management
+  - Handles scheduling and logging
 
 - CoinbaseTrader, GeminiTrader, BinanceTrader
--- Exchange-specific implementations
--- Handle API initialization
+  - Exchange-specific implementations
+  - Handle API initialization
 
 - Methods
--- get_finance_data(): Fetches market data from Yahoo Finance
--- calculate_arbitrage(): Identifies trading opportunities
--- execute_trades(): Places orders based on arbitrage
--- run(): Main daemon loop
--- _initialize_exchange(): Sets up exchange connection
+  - get_finance_data(): Fetches market data from Yahoo Finance
+  - calculate_arbitrage(): Identifies trading opportunities
+  - execute_trades(): Places orders based on arbitrage
+  - run(): Main daemon loop
+  - _initialize_exchange(): Sets up exchange connection
 
 - Error Handling
--- Logs all errors to file
--- Continues running after recoverable errors
--- Implements a 5-minute delay after critical errors
+  - Logs all errors to file
+  - Continues running after recoverable errors
+  - Implements a 5-minute delay after critical errors
 
 - Troubleshooting
--- Check /var/log/crypto_trader.log for errors
--- Verify API credentials
--- Ensure sufficient permissions
--- Test connectivity in test mode first
+  - Check /var/log/crypto_trader.log for errors
+  - Verify API credentials
+  - Ensure sufficient permissions
+  - Test connectivity in test mode first
