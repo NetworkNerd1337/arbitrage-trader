@@ -40,11 +40,9 @@ Create the Files and Folders:
 - Make executable: chmod +x crypto_trader.py
 - Create necessary directories:
 
-<code>
-sudo mkdir -p /var/lib/crypto_trader
+<code>sudo mkdir -p /var/lib/crypto_trader
 sudo mkdir -p /var/log
-sudo chown $USER /var/lib/crypto_trader /var/log
-</code>
+sudo chown $USER /var/lib/crypto_trader /var/log</code>
 
 Configuration:
 
@@ -53,8 +51,7 @@ The script includes a placeholder **_load_config** method. In production, you sh
 - Create a **config.ini** file with API credentials
 - Modify **_load_config** to read from this file Example **config.ini**:
 
-<code>
-[coinbase]
+<code>[coinbase]
 api_key = your_key
 api_secret = your_secret
 sandbox_key = your_sandbox_key
@@ -70,18 +67,15 @@ sandbox_secret = your_sandbox_secret
 api_key = your_key
 api_secret = your_secret
 sandbox_key = your_sandbox_key
-sandbox_secret = your_sandbox_secret
-</code>
+sandbox_secret = your_sandbox_secret</code>
 
 Usage:
 
-<code>
-# Run with Coinbase in live mode
+<code># Run with Coinbase in live mode
 ./crypto_trader.py --exchange coinbase
 
 # Run with Gemini in test mode
-./crypto_trader.py --exchange gemini --test
-</code>
+./crypto_trader.py --exchange gemini --test</code>
 
 =Features=
 
