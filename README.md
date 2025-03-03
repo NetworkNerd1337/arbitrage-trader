@@ -71,10 +71,10 @@ sandbox_secret = your_sandbox_secret</code>
 
 Usage:
 
-<code># Run with Coinbase in live mode
+<code>#Run with Coinbase in live mode
 ./crypto_trader.py --exchange coinbase
 
-# Run with Gemini in test mode
+#Run with Gemini in test mode
 ./crypto_trader.py --exchange gemini --test</code>
 
 =Features=
